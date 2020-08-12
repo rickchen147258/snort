@@ -246,7 +246,8 @@ void DAQ_Init (const SnortConfig* sc)
     if ( !loaded )
         DAQ_Load(sc);
 
-    if ( sc->daq_type ) type = sc->daq_type;
+    if ( sc->daq_type ) 
+        type = sc->daq_type;
 
     daq_mod = daq_find_module(type);
 
